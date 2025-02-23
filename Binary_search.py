@@ -55,25 +55,52 @@
 # Ceiling of a number :-
 
 
-arr = [2, 3, 4,9, 14, 16, 18]
-target = int(input())
+# arr = [2, 3, 5, 9, 14, 16, 18]
+# t = int(input())
 
-l, r = 0, len(arr)-1
+# l , r = 0, len(arr) - 1
+# while l <= r:
+#     mid = l + (r - l) // 2
+#     if arr[mid] == t:
+#         print(arr[mid])
+#         break
+    
+#     elif arr[mid] < t:
+#         l = mid + 1
+        
+#     else: 
+#         ceiling = arr[mid]
+#         r = mid - 1
+        
+# if ceiling != 1 :
+#     print(ceiling)
+# else :
+#     print(-1)
 
-while l <= r :
-    mid = (l+(r-l))//2
-    if arr[mid] == target :
-        print(mid)
+
+
+
+
+
+
+# Floor of a Number :-
+
+arr = [2, 3, 5, 9, 14, 16]
+t = int(input())
+
+l , r = 0, len(arr) - 1
+while l <= r:
+    mid = l + (r - l) // 2
+    if arr[mid] == t:
+        print(arr[mid])
         break
-    elif arr[mid] < target :
+    elif arr[mid] < t:
+        floor = arr[mid]
         l = mid + 1
-    else :
-        r = mid -1
+    else:
+        r = mid - 1
 
-    if arr[mid] != target :
-        if arr[mid] > target :
-            print(mid - 1)
-            break
-        elif arr[mid] < target :
-            print(arr[mid+1])
-            break
+if floor != 1:
+    print(floor)
+else:
+    print(-1)
