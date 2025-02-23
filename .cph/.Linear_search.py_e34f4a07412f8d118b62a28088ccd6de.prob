@@ -1,0 +1,1 @@
+{"name":"Local: Linear_search","url":"/Users/souryagupta/Dsa_practice/Linear_search.py","tests":[{"id":1739671141328,"input":"1 2 3 4 5 6\n5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/souryagupta/Dsa_practice/Linear_search.py","group":"local","local":true}
