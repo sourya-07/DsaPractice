@@ -1,4 +1,4 @@
-# arr = [2, 4, 6, 8, 9, 34, 36, 65]
+# arr = [2, 4, 6, 8, 9, 34, 34, 36, 65]
 # target = 34
 # n = len(arr)
 # l, r = 0, n-1
@@ -52,7 +52,7 @@
 
 
 
-# Ceiling of a number :-
+# Ceiling of a number in a sorted array :- 
 
 
 # arr = [2, 3, 5, 9, 14, 16, 18]
@@ -85,22 +85,29 @@
 
 # Floor of a Number :-
 
-arr = [2, 3, 5, 9, 14, 16]
-t = int(input())
+# arr = [2, 3, 5, 9, 14, 16]
+# t = int(input())
 
-l , r = 0, len(arr) - 1
-while l <= r:
-    mid = l + (r - l) // 2
-    if arr[mid] == t:
-        print(arr[mid])
-        break
-    elif arr[mid] < t:
-        floor = arr[mid]
-        l = mid + 1
-    else:
-        r = mid - 1
+# l , r = 0, len(arr) - 1
+# while l <= r:
+#     mid = l + (r - l) // 2
+#     if arr[mid] == t:
+#         print(arr[mid])
+#         break
+#     elif arr[mid] < t:
+#         floor = arr[mid]
+#         l = mid + 1
+#     else:
+#         r = mid - 1
 
-if floor != 1:
-    print(floor)
-else:
-    print(-1)
+# if floor != 1:
+#     print(floor)
+# else:
+#     print(-1)
+
+
+
+
+
+
+
