@@ -76,3 +76,79 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+# Instead of using a function to print numbers, we can call this Function only .
+
+
+# def print1(n) :
+    
+#     if n == 10 : # Base condition started.
+#         print(10) # Its not a part of Base condition.
+#         return # base condition ended .
+    
+#     print(n)
+#     print1(n+1)
+    
+
+# print1(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  Find nth fibonacci number . 
+
+# def fibonacci(n) :
+#     if n == 0 :
+#         return 0
+#     elif n == 1 :
+#         return 1
+#     else :
+#         return fibonacci(n-1) + fibonacci(n-2)
+    
+# print(fibonacci(7))
+
+
+
+# def fibonacci (n) :
+#     if n < 2 :
+#         return n
+#     else :
+#         return fibonacci(n-1) + fibonacci(n-2)
+    
+# print(fibonacci(6))
+
+
+
+
+
+
+
+
+def fibo(n) :
+    if n < 2 :
+        return n
+    else :
+        return fibo(n-1) + fibo(n-2)
+
+print(fibo(5))
