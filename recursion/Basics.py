@@ -143,12 +143,36 @@
 
 
 
+# def fibo(n) :
+#     if n < 2 :
+#         return n
+#     else :
+#         return fibo(n-1) + fibo(n-2)
+
+# print(fibo(5))
 
 
-def fibo(n) :
-    if n < 2 :
-        return n
-    else :
-        return fibo(n-1) + fibo(n-2)
 
-print(fibo(5))
+
+
+
+
+
+
+# How to understand & approch a problem :
+
+# 1. Identify if you can break down problem into smaller problems.
+
+#  2. Write the recurence realetion if need .
+
+# 3 Draw the recursive tree.
+
+# 4. About the tree.
+
+# # See the flow of funcrtions, how they are getting in stuck.
+
+# Identify & flows on left tree call and right tree calls.
+
+
+
+
