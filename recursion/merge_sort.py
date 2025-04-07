@@ -50,39 +50,35 @@
 
 
 def mergeSort(arr):
-    if len(arr) > 1 :
+    if  len(arr) > 1 :
         left_arr = arr[:len(arr) // 2]
         right_arr = arr[len(arr) // 2:]
-
+        
         mergeSort(left_arr)
         mergeSort(right_arr)
-        
         i = j = k = 0
         
-        while i < len(left_arr) and j < len(right_arr) :
+        while i < len(arr) and j < len(arr) :
             if left_arr[i] < right_arr[j] :
                 arr[k] = left_arr[i]
                 i += 1
                 k += 1
-            
             else :
                 arr[k] = right_arr[j]
-                j += 1
+                i += 1
                 k += 1
         
-        while i < len(left_arr) :
+        while i < len(arr) :
             arr[k] = left_arr[i]
             i += 1
-            k += 1
-            
-        while j < len(right_arr) :
+            k += 1 
+        
+        while j < len(arr) :
             arr[k] = right_arr[j]
             j += 1
             k += 1
-            
+    
     return arr
-
-
 
 arr = [2, 3, 5, 1, 7, 4, 4, 4, 2, 6, 9]
 print(mergeSort(arr))
