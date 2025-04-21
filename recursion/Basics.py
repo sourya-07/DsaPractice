@@ -169,10 +169,6 @@
 
 # 4. About the tree.
 
-# # See the flow of funcrtions, how they are getting in stuck.
+# # See the flow of functions, how they are getting in stuck.
 
 # Identify & flows on left tree call and right tree calls.
-
-
-
-

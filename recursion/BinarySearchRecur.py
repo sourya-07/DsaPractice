@@ -1,15 +1,15 @@
-def binary_search(arr, low, high, target):
-    if low > high:
+def binary_search(arr, s, e, target):
+    if s > e:
         return -1  # Element not found
 
-    mid = (low + high) // 2
+    mid = (s + e) // 2
 
     if arr[mid] == target:
         return mid
     elif arr[mid] > target:
-        return binary_search(arr, low, mid - 1, target)
+        return binary_search(arr, s, mid - 1, target)
     else:
-        return binary_search(arr, mid + 1, high, target)
+        return binary_search(arr, mid + 1, e, target)
 
 arr = list(map(int, input().split()))
 target = int(input())
