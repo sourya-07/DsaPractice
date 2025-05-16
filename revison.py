@@ -9,3 +9,6 @@
 #     prr[i] = prr[i-1] + arr[i]
     
 # print(prr)
+
+# Binary Search
+arr = [1, 2, 3, 4, 5]
