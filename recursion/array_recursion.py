@@ -55,3 +55,4 @@ def search(arr, tar, i = 0) :
     return search(arr, tar, i + 1)
 
 print(search([1, 3, 2, 5, 7], 3))
+
