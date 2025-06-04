@@ -45,14 +45,34 @@
 # print(search([1, 4, 2, 6]))
 
 
-def search(arr, tar, i = 0) :
-    if len(arr) - 1 == i :
-        return -1
+# def search(arr, tar, i = 0) :
+#     if len(arr) - 1 == i :
+#         return -1
     
-    if arr[i] == tar :
-        return i 
+#     if arr[i] == tar :
+#         return i 
     
-    return search(arr, tar, i + 1)
+#     return search(arr, tar, i + 1)
 
-print(search([1, 3, 2, 5, 7], 3))
+# print(search([1, 3, 2, 5, 7], 3))
 
+
+
+
+# Linear Search (multiple occurence) :-
+
+# def linear_search(arr, tar, i = 0) :
+#     if len(arr) - 1 == i :
+#         return []
+    
+#     fn_call = linear_search(arr, tar, i + 1)
+    
+#     if arr[i] == tar : 
+#         return [i] + fn_call # here it is returning the array indices.
+    
+#     return fn_call
+
+
+# arr = [1, 2, 2,4, 3]
+# tar = 2
+# print(linear_search(arr, tar))
