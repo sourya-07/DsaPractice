@@ -16,6 +16,7 @@
 
 
 
+
 # Q2. Create a recursion function to print 1 to n :-
 
 # def fun_rev(n) : #By kunal khuswaha
