@@ -152,18 +152,18 @@
 # Using helper function
 
 
-def count_zeros_helper(n, c):
+# def count_zeros_helper(n, c):
     
-    if n == 0 :
-        return c
+#     if n == 0 :
+#         return c
     
-    rem = 0
-    if rem == 0 :
-        c += 1
-    return count_zeros_helper(n // 10, c)
+#     rem = 0
+#     if rem == 0 :
+#         c += 1
+#     return count_zeros_helper(n // 10, c)
 
 
-def count_zeros(n) :
-    return count_zeros_helper(n, 0)
+# def count_zeros(n) :
+#     return count_zeros_helper(n, 0)
 
-print(count_zeros(1909800))
+# print(count_zeros(1909800))
