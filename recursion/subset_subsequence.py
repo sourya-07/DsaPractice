@@ -46,16 +46,16 @@
 
 
 
-def subseq(p, up):
-    up.sort()
-    if len(up) == 0:
-        return [p]
+# def subseq(p, up):
+#     up.sort()
+#     if len(up) == 0:
+#         return [p]
     
-    ch = up[0]
+#     ch = up[0]
 
-    left = subseq(p + [ch], up[1:])
-    right = subseq(p, up[1:])
+#     left = subseq(p + [ch], up[1:])
+#     right = subseq(p, up[1:])
     
-    return left + right
+#     return left + right
 
-print(subseq([], [1, 2, 2]))
+# print(subseq([], [1, 2, 2]))
