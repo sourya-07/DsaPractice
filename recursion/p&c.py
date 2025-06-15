@@ -72,3 +72,17 @@
 # leetcode 1155 :- Number of Dice Rolls With Target Sum:
 
 
+# def dice_rolls(p, target) :
+#     if target == 0 :
+#         return [p]
+    
+#     res = []
+#     for i in range(1, 7) :
+#         if i <= target :
+#             call = dice_rolls(p + [i], target - i)
+#             for j in range(len(call)) :
+#                 res.append(call[j])
+                
+#     return res
+
+# print(dice_rolls([], 3))
