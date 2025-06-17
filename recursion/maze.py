@@ -68,18 +68,77 @@
 
 # Maze with obstacles :-
 
-def maze_obstacles(path, maze, r, c) :
-    if r == len(maze) and len(maze) == 1 :
-        return [path]
+# def maze_obstacles(path, maze, r, c) :
+#     if r == len(maze) - 1 and len(maze[0]) - 1 == c :
+#         return [path]
     
-    left, right , diagonal = [], [], []
+#     down, right , diagonal = [], [], []
     
-        
-    if r > 1 :
-        left = maze_obstacles(path + ['H'],maze, r - 1, c)
+#     if not maze[r][c]:
+#         return []
+     
+#     if r < len(maze) - 1 :
+#         down = maze_obstacles(path + ['R'],maze, r + 1, c)
 
 
-    if c > 1 :
-        right = maze_obstacles(path + ['D'],maze, r, c - 1)
-        
+#     if c < len(maze) - 1 :
+#         right = maze_obstacles(path + ['D'],maze, r, c + 1)
     
+#     return down + right
+
+
+ 
+# board = [
+#     [True, True, True], 
+#     [True, False, True], 
+#     [True, True, True]
+#     ]
+# print(maze_obstacles([], board, 0, 0))
+
+
+
+
+
+
+
+
+# Including_all_path
+
+
+# def all_path(paths, maze, r, c) :
+#     if r == len(maze) - 1 and len(maze[0]) - 1 == c :
+#         return [paths]
+    
+#     if not maze[r][c]:
+#         return []
+    
+#     maze[r][c] = False
+    
+#     down, right, left, up = [], [], [], []
+    
+#     if r < len(maze) - 1 :
+#         down = all_path(paths + "D", maze, r + 1, c)
+        
+#     if r > 0 :
+#         up = all_path(paths + "U", maze, r - 1, c)
+    
+#     if c > 0 :
+#         left = all_path(paths + 'L', maze, r, c - 1)
+    
+#     if c < len(maze[0]) - 1 :
+#         right = all_path(paths + 'R', maze, r, c + 1)
+        
+#     return down + up + left + right
+
+#     maze[r][c] = True
+
+# board = [
+#     [True, True, True], 
+#     [True, True, True], 
+#     [True, True, True]
+#     ]
+
+# print(all_path('', board, 0, 0))
+
+
+
