@@ -224,7 +224,7 @@
 
 
 
-def removeOuterParentheses(s):
+# def removeOuterParentheses(s):
     
     # stack, res = [], ''
     # for i in range(len(s)):
@@ -240,19 +240,19 @@ def removeOuterParentheses(s):
     
     # return res
 
-    res, c = '', 0
+#     res, c = '', 0
 
-    for i in range(len(s)) :
-        if s[i] == '(':
-            if c > 0 :
-                res += '('
-            c += 1
-        else :
-            c -= 1
-            if c > 0:
-                res += ')'
+#     for i in range(len(s)) :
+#         if s[i] == '(':
+#             if c > 0 :
+#                 res += '('
+#             c += 1
+#         else :
+#             c -= 1
+#             if c > 0:
+#                 res += ')'
     
-    return res
+#     return res
 
 
-print(removeOuterParentheses("((()()()))(())"))
+# print(removeOuterParentheses("((()()()))(())"))
