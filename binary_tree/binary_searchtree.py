@@ -69,4 +69,19 @@ class TreeNode:
             self.right.inorder()
     
     
-        
+    def preorder(self):
+        print(self.value)
+        if self.left:
+            self.left.preorder()
+        if self.right:
+            self.right.preorder()
+    
+    def postorder(self):
+        if self.left:
+            self.left.postorder()
+        if self.right:
+            self.right.postorder()
+        print(self.value)
+    
+    
+tree = TreeNode.insert(5)
