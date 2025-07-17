@@ -159,33 +159,35 @@
 
 # Binary tree right side view:-
 
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
-from collections import deque
-class Solution:
-    def rightSideView(self, root):
-        result = []
-        if root is None: return result
+# from collections import deque
+# class Solution:
+#     def rightSideView(self, root):
+#         result = []
+#         if root is None: return result
 
-        queue = deque()
-        queue.append(root)
+#         queue = deque()
+#         queue.append(root)
 
-        while queue:
-            curr_level = []
-            for i in range(len(queue)):
-                curr_node = queue.popleft()
-                curr_level.append(curr_node.val)
+#         while queue:
+#             curr_level = []
+#             for i in range(len(queue)):
+#                 curr_node = queue.popleft()
+#                 curr_level.append(curr_node.val)
 
-                if curr_node.left is not None:
-                    queue.append(curr_node.left)
-                if curr_node.right is not None:
-                    queue.append(curr_node.right)
+#                 if curr_node.left is not None:
+#                     queue.append(curr_node.left)
+#                 if curr_node.right is not None:
+#                     queue.append(curr_node.right)
 
-            result.append(curr_level[-1])
+#             result.append(curr_level[-1])
         
-        return result
+#         return result
+
+
+
