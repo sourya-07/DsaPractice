@@ -115,3 +115,31 @@
 
 
 
+
+
+
+# Merge two sorted arrays:- 
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [0, 3, 4, 5]
+
+p1 = p2 = 0
+merge = []
+
+while p1 < len(arr1) and p2 < len(arr2):
+    if arr1[p1] < arr2[p2] :
+        merge.append(arr1[p1])
+        p1 += 1
+    else :
+        merge.append(arr2[p2])
+        p2 += 1
+
+while p1 < len(arr1):
+    merge.append(arr1[p1])
+    p1 += 1
+
+while p2 < len(arr2):
+    merge.append(arr2[p2])
+    p2 += 1
+    
+    
+print(merge)
