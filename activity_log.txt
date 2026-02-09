@@ -2,3 +2,4 @@ Entry for 2026-01-14 10:00:00: Add skeleton for Knapsack DP approach
 Entry for 2026-01-16 11:30:00: Fix boundary conditions in Knapsack recursion
 Entry for 2026-01-31 09:15:00: Add memoization to Fibonacci solution
 Entry for 2026-02-06 14:00:00: Implement climbing stairs using bottom-up DP
+Entry for 2026-02-09 10:45:00: Initial setup for sorting algorithm benchmarks
