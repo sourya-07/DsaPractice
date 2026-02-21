@@ -10,7 +10,7 @@
 #     return left + right
 
 
-# print(count_path(3, 3))
+# print(count_path(3, 7))
 
 
 
@@ -30,7 +30,7 @@
         
 #     return left + right
 
-# print(print_path([], 3, 3))
+# print(print_path([], 3, 7))
 
 
 
